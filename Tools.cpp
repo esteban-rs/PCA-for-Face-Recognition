@@ -45,8 +45,6 @@ void transpose_matrix(int n, int m, double **matrix, double **matrix_transpose){
 }
 
 void matrix_multiplication(int rows, int pivot, int cols, double **A, double **B, double **C) {
-    double suma = 0;
-
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             for (int k = 0; k < pivot; k++ ) {

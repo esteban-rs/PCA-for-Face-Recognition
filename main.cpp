@@ -32,7 +32,7 @@ int main(int argc, char const *argv[]){
 
     double *average_face = calculate_average(M, N, AT);
     average_contribution(M, N, average_face, AT);
-    // write_average_face(rows, cols, max_scale, average_face);
+    write_average_face(rows, cols, max_scale, average_face);
     
     // 3. COMPUTE L = ATA
     double **A = create_matriz_cero(N, M);
@@ -66,6 +66,7 @@ int main(int argc, char const *argv[]){
     //change_interval(K, rows*cols, ET);
     //write_eigenfaces(K, rows, cols, max_scale, ET);
     
+
     freeMatrix(M, eigenvectors);
 
     // Proyect A into eigenface space, save it in Y
