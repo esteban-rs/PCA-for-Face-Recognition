@@ -45,7 +45,7 @@ int main(int argc, char const *argv[]){
     // 4. GET EIGENPAIS
     double *eigenvalues   = create_vector_cero(M);
     double **eigenvectors = create_matriz_cero(M, M);
-    power_method_deflation(M, L, eigenvalues, eigenvectors, 10000, M, 0.00001);
+    power_method_deflation(M, L, eigenvalues, eigenvectors, 10000, K, 0.00001);
 
     // 5. PLOT EIGEN GRAPH
     /*
